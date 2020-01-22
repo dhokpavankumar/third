@@ -1,0 +1,16 @@
+{%extends 'testapp/base.html'%}
+
+    {% block content %}
+        <div class="jumbotron">
+            <h1>Beer Details</h1><hr color="red">
+        </div>
+            <ul>
+                <li><strong>Beer Name:</strong>{{beer.name|title}}</li>
+                <li><strong>Beer Taste:</strong>{{beer.taste}}</li>
+                <li><strong>Beer Color:</strong>{{beer.color}}</li>
+                <li><strong>Beer Price:</strong>{{beer.price}}</li>
+            </ul>
+            <a href="/" class="btn btn-success btn-lg">Home</a>
+
+
+    {% endblock %}

@@ -1,0 +1,13 @@
+{%extends 'testapp/base.html'%}
+
+    {% block content %}
+        <h1>Add new beer here</h1><hr color="red">
+        <form method="post">
+            {{form.as_p}}
+            {% csrf_token %}
+            <input type="submit" class="btn btn-primary btn-lg" value="Insert/Update">
+            <a href="/" class="btn btn-success btn-lg">Home</a>
+
+        </form>
+
+    {% endblock %}
